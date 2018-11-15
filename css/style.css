@@ -1,0 +1,136 @@
+/* Reference
+font-family: 'Bitter', serif;
+font-family: 'Cinzel', serif;
+font-family: 'Mali', cursive;
+#353442 - Dark Blue
+#FFF14D - Bright Yellow
+#F2E2C6 - Pale Beige
+#44A6B2 - Muted Blue
+#FF7A3D - Muted Orange
+*/
+
+/* The box fix starts here */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* The box fix ends here */
+
+body {
+  background: #353442;
+}
+
+nav {
+    background-color: #FF7A3D;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav ul li a {
+  padding: 10px;
+  margin: 5px;
+  color: #FF7A3D;
+  text-decoration: none;
+  background: #353442;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #353442;
+}
+
+nav ul li a:hover {
+  border-width: 3px;
+  border-color: #FFF14D;
+}
+
+header {
+  background-color: #FF7A3D;
+  height: 115px;
+  /* padding: 2px 5px 2px 5px; */
+  margin: -80px -10px 10px -15px;
+  display: flex;
+}
+
+.header-hill-bg {
+  padding: 0;
+  margin: 0;
+  height: 115px;
+  background-image: url(../images/hill_bg.svg);
+  background-repeat: no-repeat;
+  background-size: 546px 116px;
+}
+
+.title {
+  margin: 17px 0px 0px 110px;
+}
+
+header h1, header h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 30px;
+  text-shadow: 1px 1px #F2E2C6;
+}
+
+h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 20px;
+  text-shadow: 1px 1px #F2E2C6;
+  text-align: right;
+  display: flex;
+  
+}
+
+.content-wrap{
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+footer ul {
+  list-style: none;
+}
+
+.room-title {
+  margin: 0px;
+  padding: 10px 0px 10px 0px;
+  font-family: 'Cinzel', serif;
+  font-size: 24px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+.room-logo {
+  border-style: solid;
+  border: 0;
+  border-radius: 100%;
+  background: #FFF14D;
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  float:right;
+}
+
+.room-content {
+  width: 800px;
+  height: 600px;
+  margin: 0 auto;
+  background: #F2E2C6;
+  padding: 20px 20px 20px 20px;
+}
+
+.room-item p {
+  margin: 0;
+}
